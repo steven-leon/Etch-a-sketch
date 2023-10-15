@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-sketch</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Etch-a-sketch</h1>
+    </header>
+
+    <main>
+        <div class="container-options">
+            
+            <button class="options-button" id="pick">Pick <input type="color" id="color-picker"></button>
+            <button class="options-button" id="rainbow-mode">Rainbow mode</button>
+            <button class="options-button" id="eraser">Eraser</button>
+            <button class="options-button" id="clear">Clear</button>
+        </div>
+
+        <div class="container-div" id="container-div"></div>
+
+        <div class="container-range">
+            <span id="sliderValue"></span>
+            <input type="range" id="sizeSlider" min="1" max="64" value="16">   
+        </div>
+        
+    </main>
+
+    <footer>Copyright © 2023 Steven Leon</footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
